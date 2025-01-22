@@ -1,0 +1,364 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-01-19T18:59:29.785Z",
+  "__export_source": "insomnia.desktop.app:v10.3.0",
+  "resources": [
+    {
+      "_id": "req_421e991f19554c8f9bf04f2fe922ab81",
+      "parentId": "fld_4e84325ab5d74eeeab423d6fb1bf4eb7",
+      "modified": 1737312062698,
+      "created": 1737306966286,
+      "url": "{{url_foro}}/topics",
+      "name": "Listar",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        { "name": "page", "value": "0", "disabled": false },
+        { "name": "size", "value": "10", "disabled": false }
+      ],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1737306989619,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_4e84325ab5d74eeeab423d6fb1bf4eb7",
+      "parentId": "fld_d6f96e66ec084c9ab69f130fdb3274e2",
+      "modified": 1737306985505,
+      "created": 1737306983398,
+      "name": "Topicos",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1737074681898,
+      "environmentType": "kv",
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_d6f96e66ec084c9ab69f130fdb3274e2",
+      "parentId": "wrk_e5b783cfe98f4f4688616772bb9a6d63",
+      "modified": 1737074661530,
+      "created": 1737074661530,
+      "name": "forohub",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1737074661530,
+      "environmentType": "kv",
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_e5b783cfe98f4f4688616772bb9a6d63",
+      "parentId": null,
+      "modified": 1700601677247,
+      "created": 1700601677247,
+      "name": "alura",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_5f520aa8f0074eb69eac4f927038f8f4",
+      "parentId": "fld_4e84325ab5d74eeeab423d6fb1bf4eb7",
+      "modified": 1737312954371,
+      "created": 1737307283985,
+      "url": "{{url_foro}}/topics/2",
+      "name": "obtener",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1737306989569,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_416960e52b65445aacddf8fc5b1a3431",
+      "parentId": "fld_4e84325ab5d74eeeab423d6fb1bf4eb7",
+      "modified": 1737312978049,
+      "created": 1737306362799,
+      "url": "{{url_foro}}/topics",
+      "name": "Crear",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"Problema con Java\",\n\t\"message\": \"Tengo un error en mi código\",\n\t\"course\": \"Java Básico\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_d39d2597fb624b9392dac9514d8bc638"
+        },
+        {
+          "name": "Authorization",
+          "value": "{{token}}",
+          "id": "pair_c39b057a9e264f7db62be7983ae677b8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1737306989544,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_147039aea56b41a58c8d43dce058352c",
+      "parentId": "fld_4e84325ab5d74eeeab423d6fb1bf4eb7",
+      "modified": 1737312201493,
+      "created": 1737307314851,
+      "url": "{{url_foro}}/topics/1",
+      "name": "Actualizar",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"Problema resuelto\",\n\t\"message\": \"Ya encontré la solución\",\n\t\"course\": \"Java Básico\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_9720ee7d39f2412f8d30e249ec8af250"
+        },
+        {
+          "name": "Authorization",
+          "value": "{{token}}",
+          "id": "pair_523c83b590d94e7a9c9ff9b3172da1e3"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1737306989531.5,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_529aeb81725e42ceacc3b50c359ce6f4",
+      "parentId": "fld_4e84325ab5d74eeeab423d6fb1bf4eb7",
+      "modified": 1737312198962,
+      "created": 1737307406103,
+      "url": "{{url_foro}}/topics/1/status",
+      "name": "Actualizar el estado",
+      "description": "",
+      "method": "PATCH",
+      "body": { "text": "\"SOLVED\"", "mimeType": "application/json" },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_5f887835f46045e6a0d56a361e47e863"
+        },
+        {
+          "name": "Authorization",
+          "value": "{{token}}",
+          "id": "pair_1e11a0b061194c53a46b22824d7273c7"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1737306989519,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9e13ac10edf24321800444b28276128a",
+      "parentId": "fld_4e84325ab5d74eeeab423d6fb1bf4eb7",
+      "modified": 1737312194338,
+      "created": 1737307440997,
+      "url": "{{url_foro}}/topics/1",
+      "name": "Eliminar",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "{{token}}",
+          "id": "pair_bf447de407d143739bb538575c074305"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1737306989469,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4b32d66fe44c45cb8e0ac0d33c14585f",
+      "parentId": "fld_d6f96e66ec084c9ab69f130fdb3274e2",
+      "modified": 1737312177213,
+      "created": 1737074686467,
+      "url": "{{url_foro}}/auth/login",
+      "name": "Autenticar",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n    \"email\": \"juan@example.com\",\n    \"password\": \"123456\"\n}"
+      },
+      "parameters": [],
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "authentication": {},
+      "metaSortKey": -1737074681598,
+      "isPrivate": false,
+      "pathParameters": [],
+      "afterResponseScript": "const jsonBody = insomnia.response.json();\n\ninsomnia.environment.set(\"token\", `Bearer ${jsonBody.token}`);\n",
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1a3655e79b1f456a9e02ff6735d838be",
+      "parentId": "fld_d6f96e66ec084c9ab69f130fdb3274e2",
+      "modified": 1737312081583,
+      "created": 1736990263171,
+      "url": "{{url_foro}}/users/register",
+      "name": "Crear usuario",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n    \"fullName\": \"Juan Perez\",\n    \"email\": \"juan@example.com\",\n    \"password\": \"123456\"\n}"
+      },
+      "parameters": [],
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "authentication": {},
+      "metaSortKey": -1737074665623,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_ee2527c8c73be99e009b2cccf36fa67a6774c31d",
+      "parentId": "wrk_e5b783cfe98f4f4688616772bb9a6d63",
+      "modified": 1737312938268,
+      "created": 1700601677250,
+      "name": "Base Environment",
+      "data": {
+        "url": "http://localhost:4000/api",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsZWptZW5kZXoiLCJyb2xlIjoiY3VzdG9tZXIiLCJzdWIiOjEsImlhdCI6MTcwMDYwODU3MywiZXhwIjoxNzAwNjE1NzczfQ.fshi6Z5s455msP66uPAdB-uqHHWtbTSx-bDg856mG9o"
+      },
+      "dataPropertyOrder": { "&": ["url", "token"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1700601677250,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_ee2527c8c73be99e009b2cccf36fa67a6774c31d",
+      "parentId": "wrk_e5b783cfe98f4f4688616772bb9a6d63",
+      "modified": 1737312938267,
+      "created": 1700601677253,
+      "name": "Default Jar",
+      "cookies": [
+        {
+          "id": "62d80844-a42a-40fa-98dd-707cef243abb",
+          "key": "JSESSIONID",
+          "value": "2BEA6F6373812A97E77BCE14D9E33BCB",
+          "expires": "Infinity",
+          "domain": "localhost",
+          "path": "/",
+          "secure": false,
+          "httpOnly": true,
+          "extensions": [],
+          "creation": "2025-01-16T01:17:44.888Z",
+          "hostOnly": true,
+          "lastAccessed": "2025-01-19T15:47:03.372Z"
+        }
+      ],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "env_41f3dcbb2486492e8e203287a14d6c27",
+      "parentId": "env_ee2527c8c73be99e009b2cccf36fa67a6774c31d",
+      "modified": 1737312938268,
+      "created": 1737311987459,
+      "name": "New Environment",
+      "data": {
+        "url_foro": "http://localhost:8080/api",
+        "token": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJGb3JvSHViIEFQSSIsInN1YiI6Imp1YW5AZXhhbXBsZS5jb20iLCJleHAiOjE3MzczMjczMzd9.Skx_B2F3WhSjkZWbM_yB4jaTsS5Nhprzt3Qo0oRJXA8"
+      },
+      "dataPropertyOrder": { "&": ["url_foro", "token"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1737311987460,
+      "environmentType": "kv",
+      "kvPairData": [
+        {
+          "id": "envPair_63fdb8517658411286952f51a03d7ea6",
+          "name": "url_foro",
+          "value": "http://localhost:8080/api",
+          "type": "str",
+          "enabled": true
+        },
+        {
+          "id": "envPair_9b09b5502b834a5f85b5d5f736726372",
+          "name": "token",
+          "value": "",
+          "type": "str",
+          "enabled": true
+        }
+      ],
+      "_type": "environment"
+    }
+  ]
+}
