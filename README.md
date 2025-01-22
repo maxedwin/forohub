@@ -164,12 +164,7 @@ src/
 - Contraseñas encriptadas con BCrypt
 - Validación de tokens en cada request
 
-### 🤝 Agradecimientos
 
-- [Oracle ONE](https://www.oracle.com/br/education/oracle-next-education/) por la oportunidad de aprendizaje
-- [Alura](https://www.aluracursos.com/) por el contenido educativo
+## 🙋‍♀️ ACERCA DE MI 
 
-
-## 🙋‍♀️ Sobre Mí 
-
-Mi nombre es María Cámpora, estudiante en Alura. Estoy apasionada por la programación y en constante aprendizaje para crear proyectos que faciliten la vida de las personas.
+Mi nombre es Edwin Llave Asqui, desarrollador en formación y apasionado por la tecnología. Mi objetivo es diseñar soluciones innovadoras que simplifiquen y mejoren la vida de las personas. Actualmente, estoy perfeccionando mis habilidades en programación, explorando nuevas tecnologías y enfrentando desafíos que me permitan crecer profesional y personalmente. 
